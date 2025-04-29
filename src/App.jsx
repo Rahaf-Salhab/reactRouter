@@ -6,7 +6,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactMe from './components/ContactMe';
 import './assets/style.css';
-
+ 
 
 function App() {
   return (

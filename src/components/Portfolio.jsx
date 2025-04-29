@@ -1,10 +1,18 @@
+import cabin from '../assets/portfolio/cabin.png';
+import cake from '../assets/portfolio/cake.png';
+import circus from '../assets/portfolio/circus.png';
+import game from '../assets/portfolio/game.png';
+import safe from '../assets/portfolio/safe.png';
+import submarine from '../assets/portfolio/submarine.png';
+import star2 from '../assets/portfolio/star2.png';
+
 const portfolioItems = [
-  {image: './src/assets/portfolio/cabin.png' },
-  { image: './src/assets/portfolio/cake.png' },
-  { image: './src/assets/portfolio/circus.png' },
-  { image: './src/assets/portfolio/game.png' },
-  { image: './src/assets/portfolio/safe.png' },
-  {image: './src/assets/portfolio/submarine.png' },
+  { image: cabin, title: "Cabin" },
+  { image: cake, title: "Cake" },
+  { image: circus, title: "Circus" },
+  { image: game, title: "Game" },
+  { image: safe, title: "Safe" },
+  { image: submarine, title: "Submarine" },
 ];
 
 const Portfolio = () => {
@@ -12,9 +20,9 @@ const Portfolio = () => {
     <section className="portfolio">
       <div className="container">
         <h2 className="portfolio">Portfolio</h2>
-        <img src='./src/assets/portfolio/star2.png' className="star2"></img>
-
+        <img src={star2} className="star2" alt="Star Divider" />
         <div className="divider"></div>
+
         <div className="portfolio-grid">
           {portfolioItems.map((item, index) => (
             <div key={index} className="portfolio-item">

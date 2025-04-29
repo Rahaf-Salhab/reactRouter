@@ -1,13 +1,13 @@
-import { FaDownload } from 'react-icons/fa'; // استيراد أيقونة التحميل
+import { FaDownload } from 'react-icons/fa';
+import star from '../assets/portfolio/star.png'; // استيراد الصورة
 
 const About = () => {
   return (
     <section className="about">
       <div className="container">
         <h2 className="about-title">ABOUT</h2>
-        <img src='./src/assets/portfolio/star.png' className='star'></img>
-        <div className="custom-divider">
-          </div>
+        <img src={star} className='star' alt="Star Divider" />
+        <div className="custom-divider"></div>
         <div className="about-content">
           <p>
             Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
